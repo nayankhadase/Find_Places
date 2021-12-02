@@ -15,12 +15,13 @@ import CoreLocation
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    //let apikey = "AIzaSyCijOe-Y8qlvcgiuizyyhAPHQSTNAWLat4"
+    let apikey = "AIzaSyBVPhDdOqpThnF2L2Em9BfNuw_tiDm9KXs"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        GMSPlacesClient.provideAPIKey("AIzaSyCijOe-Y8qlvcgiuizyyhAPHQSTNAWLat4")
-        GMSServices.provideAPIKey("AIzaSyCijOe-Y8qlvcgiuizyyhAPHQSTNAWLat4")
+        GMSPlacesClient.provideAPIKey(apikey)
+        GMSServices.provideAPIKey(apikey)
         return true
     }
 
